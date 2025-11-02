@@ -1,0 +1,35 @@
+additionalProperties:
+    formFields:
+        - default: 3000
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: WebUI Port
+            ja: WebUI ポート
+            ms: Port WebUI
+            pt-br: Porta WebUI
+            ru: Порт WebUI
+            ko: WebUI 포트
+            zh-Hant: WebUI 埠
+            zh: WebUI 端口
+        - default: ""
+          edit: true
+          envKey: DATABASE_URL
+          labelEn: Database URL
+          labelZh: 数据库 URL
+          required: false
+          type: text
+          label:
+            en: Database URL (optional, uses SQLite by default)
+            ja: データベース URL (オプション、デフォルトでは SQLite を使用)
+            ms: URL Pangkalan Data (pilihan, menggunakan SQLite secara lalai)
+            pt-br: URL do banco de dados (opcional, usa SQLite por padrão)
+            ru: URL базы данных (необязательно, по умолчанию используется SQLite)
+            ko: 데이터베이스 URL (선택 사항, 기본적으로 SQLite 사용)
+            zh-Hant: 資料庫 URL (可選，預設使用 SQLite)
+            zh: 数据库 URL (可选，默认使用 SQLite)

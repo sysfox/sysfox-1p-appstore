@@ -1,0 +1,33 @@
+name: ChronoFrame
+tags:
+    - 多媒体
+    - 实用工具
+title: 自托管照片展示和管理应用
+description: 自托管照片展示和管理应用
+additionalProperties:
+    key: chronoframe
+    name: ChronoFrame
+    tags:
+        - Media
+        - Tool
+    shortDescZh: 自托管照片展示和管理应用
+    shortDescEn: Self-hosted photo display and management application
+    description:
+        en: A smooth photo display and management application, supporting multiple image formats and large-size image rendering.
+        ja: 複数の画像フォーマットと大きなサイズの画像レンダリングをサポートする滑らかな写真表示および管理アプリケーション。
+        ms: Aplikasi paparan dan pengurusan foto yang lancar, menyokong pelbagai format gambar dan rendering imej saiz besar.
+        pt-br: Aplicativo suave de exibição e gerenciamento de fotos, com suporte a múltiplos formatos de imagem e renderização de imagens grandes.
+        ru: Приложение для плавного отображения и управления фотографиями с поддержкой нескольких форматов изображений и рендеринга больших изображений.
+        ko: 여러 이미지 형식과 대형 이미지 렌더링을 지원하는 부드러운 사진 표시 및 관리 애플리케이션.
+        zh-Hant: 流暢的照片展示和管理應用程式，支援多種圖像格式和大尺寸圖像渲染。
+        zh: 流畅的照片展示和管理应用，支持多种图像格式和大尺寸图像渲染。
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://chronoframe.bh8.ga/
+    github: https://github.com/HoshinoSuzumi/chronoframe
+    document: https://chronoframe.bh8.ga/
+    architectures:
+      - amd64
+      - arm64
