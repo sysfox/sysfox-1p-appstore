@@ -33,3 +33,771 @@ additionalProperties:
             ko: 데이터베이스 URL (선택 사항, 기본적으로 SQLite 사용)
             zh-Hant: 資料庫 URL (可選，預設使用 SQLite)
             zh: 数据库 URL (可选，默认使用 SQLite)
+        - default: ""
+          edit: true
+          envKey: CFRAME_ADMIN_EMAIL
+          labelEn: Admin Email
+          labelZh: 管理员邮箱
+          required: true
+          type: text
+          label:
+            en: Admin Email (required)
+            ja: 管理者メール (必須)
+            ms: E-mel Pentadbir (diperlukan)
+            pt-br: E-mail do Administrador (obrigatório)
+            ru: Email администратора (обязательно)
+            ko: 관리자 이메일 (필수)
+            zh-Hant: 管理員郵箱 (必填)
+            zh: 管理员邮箱 (必填)
+        - default: "Chronoframe"
+          edit: true
+          envKey: CFRAME_ADMIN_NAME
+          labelEn: Admin Name
+          labelZh: 管理员名称
+          required: false
+          type: text
+          label:
+            en: "Admin Name (default: Chronoframe)"
+            ja: "管理者名 (デフォルト: Chronoframe)"
+            ms: "Nama Pentadbir (lalai: Chronoframe)"
+            pt-br: "Nome do Administrador (padrão: Chronoframe)"
+            ru: "Имя администратора (по умолчанию: Chronoframe)"
+            ko: "관리자 이름 (기본값: Chronoframe)"
+            zh-Hant: "管理員名稱 (預設: Chronoframe)"
+            zh: "管理员名称 (默认: Chronoframe)"
+        - default: "CF1234@!"
+          edit: true
+          envKey: CFRAME_ADMIN_PASSWORD
+          labelEn: Admin Password
+          labelZh: 管理员密码
+          required: false
+          type: password
+          label:
+            en: "Admin Password (default: CF1234@!)"
+            ja: "管理者パスワード (デフォルト: CF1234@!)"
+            ms: "Kata Laluan Pentadbir (lalai: CF1234@!)"
+            pt-br: "Senha do Administrador (padrão: CF1234@!)"
+            ru: "Пароль администратора (по умолчанию: CF1234@!)"
+            ko: "관리자 비밀번호 (기본값: CF1234@!)"
+            zh-Hant: "管理員密碼 (預設: CF1234@!)"
+            zh: "管理员密码 (默认: CF1234@!)"
+        - default: "ChronoFrame"
+          edit: true
+          envKey: NUXT_PUBLIC_APP_TITLE
+          labelEn: App Title
+          labelZh: 应用标题
+          required: false
+          type: text
+          label:
+            en: App Title
+            ja: アプリタイトル
+            ms: Tajuk Aplikasi
+            pt-br: Título do Aplicativo
+            ru: Название приложения
+            ko: 앱 제목
+            zh-Hant: 應用標題
+            zh: 应用标题
+        - default: "Mems rest within the lens."
+          edit: true
+          envKey: NUXT_PUBLIC_APP_SLOGAN
+          labelEn: App Slogan
+          labelZh: 应用标语
+          required: false
+          type: text
+          label:
+            en: App Slogan
+            ja: アプリスローガン
+            ms: Slogan Aplikasi
+            pt-br: Slogan do Aplicativo
+            ru: Слоган приложения
+            ko: 앱 슬로건
+            zh-Hant: 應用標語
+            zh: 应用标语
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_APP_AUTHOR
+          labelEn: App Author
+          labelZh: 应用作者
+          required: false
+          type: text
+          label:
+            en: App Author
+            ja: アプリ作成者
+            ms: Pengarang Aplikasi
+            pt-br: Autor do Aplicativo
+            ru: Автор приложения
+            ko: 앱 작성자
+            zh-Hant: 應用作者
+            zh: 应用作者
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_APP_AVATAR_URL
+          labelEn: App Avatar URL
+          labelZh: 应用头像 URL
+          required: false
+          type: text
+          label:
+            en: App Avatar URL
+            ja: アプリアバター URL
+            ms: URL Avatar Aplikasi
+            pt-br: URL do Avatar do Aplicativo
+            ru: URL аватара приложения
+            ko: 앱 아바타 URL
+            zh-Hant: 應用頭像 URL
+            zh: 应用头像 URL
+        - default: "light"
+          edit: true
+          envKey: NUXT_PUBLIC_COLOR_MODE_PREFERENCE
+          labelEn: Color Mode Preference
+          labelZh: 颜色模式偏好
+          required: false
+          type: text
+          label:
+            en: Color Mode Preference (light/dark/system)
+            ja: カラーモード設定 (light/dark/system)
+            ms: Keutamaan Mod Warna (light/dark/system)
+            pt-br: Preferência de Modo de Cor (light/dark/system)
+            ru: Предпочтение цветового режима (light/dark/system)
+            ko: 색상 모드 기본 설정 (light/dark/system)
+            zh-Hant: 顏色模式偏好 (light/dark/system)
+            zh: 颜色模式偏好 (light/dark/system)
+        - default: "maplibre"
+          edit: true
+          envKey: NUXT_PUBLIC_MAP_PROVIDER
+          labelEn: Map Provider
+          labelZh: 地图提供商
+          required: false
+          type: text
+          label:
+            en: Map Provider (mapbox/maplibre)
+            ja: マッププロバイダー (mapbox/maplibre)
+            ms: Pembekal Peta (mapbox/maplibre)
+            pt-br: Provedor de Mapa (mapbox/maplibre)
+            ru: Провайдер карт (mapbox/maplibre)
+            ko: 지도 공급자 (mapbox/maplibre)
+            zh-Hant: 地圖提供商 (mapbox/maplibre)
+            zh: 地图提供商 (mapbox/maplibre)
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_MAP_MAPLIBRE_STYLE
+          labelEn: MapLibre Style URL
+          labelZh: MapLibre 样式 URL
+          required: false
+          type: text
+          label:
+            en: MapLibre Style URL
+            ja: MapLibre スタイル URL
+            ms: URL Gaya MapLibre
+            pt-br: URL de Estilo MapLibre
+            ru: URL стиля MapLibre
+            ko: MapLibre 스타일 URL
+            zh-Hant: MapLibre 樣式 URL
+            zh: MapLibre 样式 URL
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_MAP_MAPBOX_STYLE
+          labelEn: Mapbox Style URL
+          labelZh: Mapbox 样式 URL
+          required: false
+          type: text
+          label:
+            en: Mapbox Style URL
+            ja: Mapbox スタイル URL
+            ms: URL Gaya Mapbox
+            pt-br: URL de Estilo Mapbox
+            ru: URL стиля Mapbox
+            ko: Mapbox 스타일 URL
+            zh-Hant: Mapbox 樣式 URL
+            zh: Mapbox 样式 URL
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_MAPBOX_ACCESS_TOKEN
+          labelEn: Mapbox Access Token (Public)
+          labelZh: Mapbox 访问令牌 (公开)
+          required: false
+          type: text
+          label:
+            en: Mapbox Access Token (Public, Client-side)
+            ja: Mapbox アクセストークン (公開、クライアント側)
+            ms: Token Akses Mapbox (Awam, Sisi Klien)
+            pt-br: Token de Acesso Mapbox (Público, Cliente)
+            ru: Токен доступа Mapbox (публичный, клиентская сторона)
+            ko: Mapbox 액세스 토큰 (공개, 클라이언트측)
+            zh-Hant: Mapbox 訪問令牌 (公開、客戶端)
+            zh: Mapbox 访问令牌 (公开、客户端)
+        - default: ""
+          edit: true
+          envKey: NUXT_MAPBOX_ACCESS_TOKEN
+          labelEn: Mapbox Secret Access Token
+          labelZh: Mapbox 秘密访问令牌
+          required: false
+          type: password
+          label:
+            en: Mapbox Secret Access Token (Server-side)
+            ja: Mapbox シークレットアクセストークン (サーバー側)
+            ms: Token Akses Rahsia Mapbox (Sisi Pelayan)
+            pt-br: Token de Acesso Secreto Mapbox (Servidor)
+            ru: Секретный токен доступа Mapbox (серверная сторона)
+            ko: Mapbox 비밀 액세스 토큰 (서버측)
+            zh-Hant: Mapbox 秘密訪問令牌 (伺服器端)
+            zh: Mapbox 秘密访问令牌 (服务器端)
+        - default: ""
+          edit: true
+          envKey: NUXT_NOMINATIM_BASE_URL
+          labelEn: Nominatim Base URL
+          labelZh: Nominatim 基础 URL
+          required: false
+          type: text
+          label:
+            en: Custom Nominatim API Base URL (optional)
+            ja: カスタム Nominatim API ベース URL (オプション)
+            ms: URL Asas API Nominatim Tersuai (pilihan)
+            pt-br: URL Base da API Nominatim Personalizada (opcional)
+            ru: Базовый URL пользовательского API Nominatim (необязательно)
+            ko: 사용자 지정 Nominatim API 기본 URL (선택 사항)
+            zh-Hant: 自訂 Nominatim API 基礎 URL (可選)
+            zh: 自定义 Nominatim API 基础 URL (可选)
+        - default: "s3"
+          edit: true
+          envKey: NUXT_STORAGE_PROVIDER
+          labelEn: Storage Provider
+          labelZh: 存储提供商
+          required: false
+          type: text
+          label:
+            en: Storage Provider (s3/local/openlist)
+            ja: ストレージプロバイダー (s3/local/openlist)
+            ms: Pembekal Storan (s3/local/openlist)
+            pt-br: Provedor de Armazenamento (s3/local/openlist)
+            ru: Провайдер хранилища (s3/local/openlist)
+            ko: 스토리지 공급자 (s3/local/openlist)
+            zh-Hant: 儲存提供商 (s3/local/openlist)
+            zh: 存储提供商 (s3/local/openlist)
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_S3_ENDPOINT
+          labelEn: S3 Endpoint
+          labelZh: S3 端点
+          required: false
+          type: text
+          label:
+            en: S3 Endpoint
+            ja: S3 エンドポイント
+            ms: Titik Akhir S3
+            pt-br: Endpoint S3
+            ru: Конечная точка S3
+            ko: S3 엔드포인트
+            zh-Hant: S3 端點
+            zh: S3 端点
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_S3_BUCKET
+          labelEn: S3 Bucket
+          labelZh: S3 存储桶
+          required: false
+          type: text
+          label:
+            en: S3 Bucket
+            ja: S3 バケット
+            ms: Baldi S3
+            pt-br: Bucket S3
+            ru: S3 Bucket
+            ko: S3 버킷
+            zh-Hant: S3 儲存桶
+            zh: S3 存储桶
+        - default: "auto"
+          edit: true
+          envKey: NUXT_PROVIDER_S3_REGION
+          labelEn: S3 Region
+          labelZh: S3 区域
+          required: false
+          type: text
+          label:
+            en: S3 Region
+            ja: S3 リージョン
+            ms: Wilayah S3
+            pt-br: Região S3
+            ru: Регион S3
+            ko: S3 리전
+            zh-Hant: S3 區域
+            zh: S3 区域
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_S3_ACCESS_KEY_ID
+          labelEn: S3 Access Key ID
+          labelZh: S3 访问密钥 ID
+          required: false
+          type: text
+          label:
+            en: S3 Access Key ID
+            ja: S3 アクセスキー ID
+            ms: ID Kunci Akses S3
+            pt-br: ID da Chave de Acesso S3
+            ru: ID ключа доступа S3
+            ko: S3 액세스 키 ID
+            zh-Hant: S3 訪問金鑰 ID
+            zh: S3 访问密钥 ID
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_S3_SECRET_ACCESS_KEY
+          labelEn: S3 Secret Access Key
+          labelZh: S3 秘密访问密钥
+          required: false
+          type: password
+          label:
+            en: S3 Secret Access Key
+            ja: S3 シークレットアクセスキー
+            ms: Kunci Akses Rahsia S3
+            pt-br: Chave de Acesso Secreta S3
+            ru: Секретный ключ доступа S3
+            ko: S3 비밀 액세스 키
+            zh-Hant: S3 秘密訪問金鑰
+            zh: S3 秘密访问密钥
+        - default: "photos/"
+          edit: true
+          envKey: NUXT_PROVIDER_S3_PREFIX
+          labelEn: S3 Prefix
+          labelZh: S3 前缀
+          required: false
+          type: text
+          label:
+            en: S3 Prefix
+            ja: S3 プレフィックス
+            ms: Awalan S3
+            pt-br: Prefixo S3
+            ru: Префикс S3
+            ko: S3 접두사
+            zh-Hant: S3 前綴
+            zh: S3 前缀
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_S3_CDN_URL
+          labelEn: S3 CDN URL
+          labelZh: S3 CDN URL
+          required: false
+          type: text
+          label:
+            en: S3 CDN URL
+            ja: S3 CDN URL
+            ms: URL CDN S3
+            pt-br: URL CDN S3
+            ru: URL CDN S3
+            ko: S3 CDN URL
+            zh-Hant: S3 CDN URL
+            zh: S3 CDN URL
+        - default: "false"
+          edit: true
+          envKey: NUXT_PROVIDER_S3_FORCE_PATH_STYLE
+          labelEn: S3 Force Path Style
+          labelZh: S3 强制路径样式
+          required: false
+          type: text
+          label:
+            en: S3 Force Path Style (true/false)
+            ja: S3 強制パススタイル (true/false)
+            ms: Gaya Laluan Paksa S3 (true/false)
+            pt-br: Estilo de Caminho Forçado S3 (true/false)
+            ru: Принудительный стиль пути S3 (true/false)
+            ko: S3 강제 경로 스타일 (true/false)
+            zh-Hant: S3 強制路徑樣式 (true/false)
+            zh: S3 强制路径样式 (true/false)
+        - default: "./data/storage"
+          edit: true
+          envKey: NUXT_PROVIDER_LOCAL_PATH
+          labelEn: Local Storage Path
+          labelZh: 本地存储路径
+          required: false
+          type: text
+          label:
+            en: Local Storage Path
+            ja: ローカルストレージパス
+            ms: Laluan Storan Tempatan
+            pt-br: Caminho de Armazenamento Local
+            ru: Путь локального хранилища
+            ko: 로컬 저장소 경로
+            zh-Hant: 本機儲存路徑
+            zh: 本地存储路径
+        - default: "/storage"
+          edit: true
+          envKey: NUXT_PROVIDER_LOCAL_BASE_URL
+          labelEn: Local Storage Base URL
+          labelZh: 本地存储基础 URL
+          required: false
+          type: text
+          label:
+            en: Local Storage Base URL
+            ja: ローカルストレージベース URL
+            ms: URL Asas Storan Tempatan
+            pt-br: URL Base de Armazenamento Local
+            ru: Базовый URL локального хранилища
+            ko: 로컬 저장소 기본 URL
+            zh-Hant: 本機儲存基礎 URL
+            zh: 本地存储基础 URL
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_BASE_URL
+          labelEn: OpenList Base URL
+          labelZh: OpenList 基础 URL
+          required: false
+          type: text
+          label:
+            en: OpenList Base URL
+            ja: OpenList ベース URL
+            ms: URL Asas OpenList
+            pt-br: URL Base OpenList
+            ru: Базовый URL OpenList
+            ko: OpenList 기본 URL
+            zh-Hant: OpenList 基礎 URL
+            zh: OpenList 基础 URL
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_ROOT_PATH
+          labelEn: OpenList Root Path
+          labelZh: OpenList 根路径
+          required: false
+          type: text
+          label:
+            en: OpenList Root Path
+            ja: OpenList ルートパス
+            ms: Laluan Akar OpenList
+            pt-br: Caminho Raiz OpenList
+            ru: Корневой путь OpenList
+            ko: OpenList 루트 경로
+            zh-Hant: OpenList 根路徑
+            zh: OpenList 根路径
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_TOKEN
+          labelEn: OpenList Token
+          labelZh: OpenList 令牌
+          required: false
+          type: password
+          label:
+            en: OpenList Token
+            ja: OpenList トークン
+            ms: Token OpenList
+            pt-br: Token OpenList
+            ru: Токен OpenList
+            ko: OpenList 토큰
+            zh-Hant: OpenList 令牌
+            zh: OpenList 令牌
+        - default: "/api/fs/put"
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_ENDPOINT_UPLOAD
+          labelEn: OpenList Upload Endpoint
+          labelZh: OpenList 上传端点
+          required: false
+          type: text
+          label:
+            en: OpenList Upload Endpoint
+            ja: OpenList アップロードエンドポイント
+            ms: Titik Akhir Muat Naik OpenList
+            pt-br: Endpoint de Upload OpenList
+            ru: Конечная точка загрузки OpenList
+            ko: OpenList 업로드 엔드포인트
+            zh-Hant: OpenList 上傳端點
+            zh: OpenList 上传端点
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_ENDPOINT_DOWNLOAD
+          labelEn: OpenList Download Endpoint
+          labelZh: OpenList 下载端点
+          required: false
+          type: text
+          label:
+            en: OpenList Download Endpoint
+            ja: OpenList ダウンロードエンドポイント
+            ms: Titik Akhir Muat Turun OpenList
+            pt-br: Endpoint de Download OpenList
+            ru: Конечная точка загрузки OpenList
+            ko: OpenList 다운로드 엔드포인트
+            zh-Hant: OpenList 下載端點
+            zh: OpenList 下载端点
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_ENDPOINT_LIST
+          labelEn: OpenList List Endpoint
+          labelZh: OpenList 列表端点
+          required: false
+          type: text
+          label:
+            en: OpenList List Endpoint
+            ja: OpenList リストエンドポイント
+            ms: Titik Akhir Senarai OpenList
+            pt-br: Endpoint de Lista OpenList
+            ru: Конечная точка списка OpenList
+            ko: OpenList 목록 엔드포인트
+            zh-Hant: OpenList 列表端點
+            zh: OpenList 列表端点
+        - default: "/api/fs/remove"
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_ENDPOINT_DELETE
+          labelEn: OpenList Delete Endpoint
+          labelZh: OpenList 删除端点
+          required: false
+          type: text
+          label:
+            en: OpenList Delete Endpoint
+            ja: OpenList 削除エンドポイント
+            ms: Titik Akhir Padam OpenList
+            pt-br: Endpoint de Exclusão OpenList
+            ru: Конечная точка удаления OpenList
+            ko: OpenList 삭제 엔드포인트
+            zh-Hant: OpenList 刪除端點
+            zh: OpenList 删除端点
+        - default: "/api/fs/get"
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_ENDPOINT_META
+          labelEn: OpenList Meta Endpoint
+          labelZh: OpenList 元数据端点
+          required: false
+          type: text
+          label:
+            en: OpenList Meta Endpoint
+            ja: OpenList メタエンドポイント
+            ms: Titik Akhir Meta OpenList
+            pt-br: Endpoint Meta OpenList
+            ru: Конечная точка метаданных OpenList
+            ko: OpenList 메타 엔드포인트
+            zh-Hant: OpenList 元資料端點
+            zh: OpenList 元数据端点
+        - default: "path"
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_PATH_FIELD
+          labelEn: OpenList Path Field
+          labelZh: OpenList 路径字段
+          required: false
+          type: text
+          label:
+            en: OpenList Path Field
+            ja: OpenList パスフィールド
+            ms: Medan Laluan OpenList
+            pt-br: Campo de Caminho OpenList
+            ru: Поле пути OpenList
+            ko: OpenList 경로 필드
+            zh-Hant: OpenList 路徑欄位
+            zh: OpenList 路径字段
+        - default: ""
+          edit: true
+          envKey: NUXT_PROVIDER_OPENLIST_CDN_URL
+          labelEn: OpenList CDN URL
+          labelZh: OpenList CDN URL
+          required: false
+          type: text
+          label:
+            en: OpenList CDN URL
+            ja: OpenList CDN URL
+            ms: URL CDN OpenList
+            pt-br: URL CDN OpenList
+            ru: URL CDN OpenList
+            ko: OpenList CDN URL
+            zh-Hant: OpenList CDN URL
+            zh: OpenList CDN URL
+        - default: ""
+          edit: true
+          envKey: NUXT_SESSION_PASSWORD
+          labelEn: Session Password
+          labelZh: 会话密码
+          required: false
+          type: password
+          label:
+            en: Session Password (32 characters, for encrypting session data)
+            ja: セッションパスワード (32文字、セッションデータの暗号化用)
+            ms: Kata Laluan Sesi (32 aksara, untuk menyulitkan data sesi)
+            pt-br: Senha de Sessão (32 caracteres, para criptografar dados de sessão)
+            ru: Пароль сеанса (32 символа, для шифрования данных сеанса)
+            ko: 세션 비밀번호 (32자, 세션 데이터 암호화용)
+            zh-Hant: 會話密碼 (32 個字元，用於加密會話資料)
+            zh: 会话密码 (32 个字符，用于加密会话数据)
+        - default: "false"
+          edit: true
+          envKey: NUXT_PUBLIC_OAUTH_GITHUB_ENABLED
+          labelEn: GitHub OAuth Enabled
+          labelZh: 启用 GitHub OAuth
+          required: false
+          type: text
+          label:
+            en: GitHub OAuth Enabled (true/false)
+            ja: GitHub OAuth 有効 (true/false)
+            ms: GitHub OAuth Didayakan (true/false)
+            pt-br: GitHub OAuth Habilitado (true/false)
+            ru: GitHub OAuth включен (true/false)
+            ko: GitHub OAuth 활성화 (true/false)
+            zh-Hant: 啟用 GitHub OAuth (true/false)
+            zh: 启用 GitHub OAuth (true/false)
+        - default: ""
+          edit: true
+          envKey: NUXT_OAUTH_GITHUB_CLIENT_ID
+          labelEn: GitHub OAuth Client ID
+          labelZh: GitHub OAuth 客户端 ID
+          required: false
+          type: text
+          label:
+            en: GitHub OAuth Client ID
+            ja: GitHub OAuth クライアント ID
+            ms: ID Klien OAuth GitHub
+            pt-br: ID do Cliente OAuth GitHub
+            ru: ID клиента OAuth GitHub
+            ko: GitHub OAuth 클라이언트 ID
+            zh-Hant: GitHub OAuth 用戶端 ID
+            zh: GitHub OAuth 客户端 ID
+        - default: ""
+          edit: true
+          envKey: NUXT_OAUTH_GITHUB_CLIENT_SECRET
+          labelEn: GitHub OAuth Client Secret
+          labelZh: GitHub OAuth 客户端密钥
+          required: false
+          type: password
+          label:
+            en: GitHub OAuth Client Secret
+            ja: GitHub OAuth クライアントシークレット
+            ms: Rahsia Klien OAuth GitHub
+            pt-br: Segredo do Cliente OAuth GitHub
+            ru: Секрет клиента OAuth GitHub
+            ko: GitHub OAuth 클라이언트 시크릿
+            zh-Hant: GitHub OAuth 用戶端密鑰
+            zh: GitHub OAuth 客户端密钥
+        - default: "false"
+          edit: true
+          envKey: NUXT_ALLOW_INSECURE_COOKIE
+          labelEn: Allow Insecure Cookie
+          labelZh: 允许不安全的 Cookie
+          required: false
+          type: text
+          label:
+            en: Allow Insecure Cookie (true/false, DO NOT use in production)
+            ja: 不安全な Cookie を許可 (true/false、本番環境では使用しないでください)
+            ms: Benarkan Cookie Tidak Selamat (true/false, JANGAN gunakan dalam pengeluaran)
+            pt-br: Permitir Cookie Inseguro (true/false, NÃO use em produção)
+            ru: Разрешить небезопасные Cookie (true/false, НЕ используйте в продакшене)
+            ko: 안전하지 않은 쿠키 허용 (true/false, 프로덕션에서 사용 금지)
+            zh-Hant: 允許不安全的 Cookie (true/false，請勿在生產環境中使用)
+            zh: 允许不安全的 Cookie (true/false，请勿在生产环境中使用)
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_GTAG_ID
+          labelEn: Google Analytics ID
+          labelZh: Google Analytics ID
+          required: false
+          type: text
+          label:
+            en: Google Analytics Measurement ID (e.g. G-XXXXXXX)
+            ja: "Google Analytics 測定 ID (例: G-XXXXXXX)"
+            ms: ID Pengukuran Google Analytics (cth. G-XXXXXXX)
+            pt-br: ID de Medição do Google Analytics (ex. G-XXXXXXX)
+            ru: Идентификатор измерения Google Analytics (например, G-XXXXXXX)
+            ko: "Google Analytics 측정 ID (예: G-XXXXXXX)"
+            zh-Hant: Google Analytics 測量 ID (例如 G-XXXXXXX)
+            zh: Google Analytics 测量 ID (例如 G-XXXXXXX)
+        - default: "false"
+          edit: true
+          envKey: NUXT_PUBLIC_ANALYTICS_MATOMO_ENABLED
+          labelEn: Matomo Analytics Enabled
+          labelZh: 启用 Matomo Analytics
+          required: false
+          type: text
+          label:
+            en: Matomo Analytics Enabled (true/false)
+            ja: Matomo Analytics 有効 (true/false)
+            ms: Matomo Analytics Didayakan (true/false)
+            pt-br: Matomo Analytics Habilitado (true/false)
+            ru: Matomo Analytics включен (true/false)
+            ko: Matomo Analytics 활성화 (true/false)
+            zh-Hant: 啟用 Matomo Analytics (true/false)
+            zh: 启用 Matomo Analytics (true/false)
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_ANALYTICS_MATOMO_URL
+          labelEn: Matomo Analytics URL
+          labelZh: Matomo Analytics URL
+          required: false
+          type: text
+          label:
+            en: Matomo Analytics URL
+            ja: Matomo Analytics URL
+            ms: URL Matomo Analytics
+            pt-br: URL do Matomo Analytics
+            ru: URL Matomo Analytics
+            ko: Matomo Analytics URL
+            zh-Hant: Matomo Analytics URL
+            zh: Matomo Analytics URL
+        - default: ""
+          edit: true
+          envKey: NUXT_PUBLIC_ANALYTICS_MATOMO_SITE_ID
+          labelEn: Matomo Site ID
+          labelZh: Matomo 站点 ID
+          required: false
+          type: text
+          label:
+            en: Matomo Site ID
+            ja: Matomo サイト ID
+            ms: ID Tapak Matomo
+            pt-br: ID do Site Matomo
+            ru: Идентификатор сайта Matomo
+            ko: Matomo 사이트 ID
+            zh-Hant: Matomo 網站 ID
+            zh: Matomo 站点 ID
+        - default: "true"
+          edit: true
+          envKey: NUXT_UPLOAD_MIME_WHITELIST_ENABLED
+          labelEn: Upload MIME Whitelist Enabled
+          labelZh: 启用上传 MIME 白名单
+          required: false
+          type: text
+          label:
+            en: Upload MIME Whitelist Enabled (true/false)
+            ja: アップロード MIME ホワイトリスト有効 (true/false)
+            ms: Senarai Putih MIME Muat Naik Didayakan (true/false)
+            pt-br: Whitelist MIME de Upload Habilitada (true/false)
+            ru: Белый список MIME загрузки включен (true/false)
+            ko: 업로드 MIME 화이트리스트 활성화 (true/false)
+            zh-Hant: 啟用上傳 MIME 白名單 (true/false)
+            zh: 启用上传 MIME 白名单 (true/false)
+        - default: "image/jpeg,image/png,image/webp,image/gif,image/bmp,image/tiff,image/heic,image/heif,video/quicktime,video/mp4"
+          edit: true
+          envKey: NUXT_UPLOAD_MIME_WHITELIST
+          labelEn: Upload MIME Whitelist
+          labelZh: 上传 MIME 白名单
+          required: false
+          type: text
+          label:
+            en: Upload MIME Whitelist (comma-separated)
+            ja: アップロード MIME ホワイトリスト (カンマ区切り)
+            ms: Senarai Putih MIME Muat Naik (dipisahkan koma)
+            pt-br: Whitelist MIME de Upload (separada por vírgula)
+            ru: Белый список MIME загрузки (через запятую)
+            ko: 업로드 MIME 화이트리스트 (쉼표로 구분)
+            zh-Hant: 上傳 MIME 白名單 (逗號分隔)
+            zh: 上传 MIME 白名单 (逗号分隔)
+        - default: "true"
+          edit: true
+          envKey: NUXT_UPLOAD_DUPLICATE_CHECK_ENABLED
+          labelEn: Upload Duplicate Check Enabled
+          labelZh: 启用上传重复检查
+          required: false
+          type: text
+          label:
+            en: Upload Duplicate Check Enabled (true/false)
+            ja: アップロード重複チェック有効 (true/false)
+            ms: Pemeriksaan Pendua Muat Naik Didayakan (true/false)
+            pt-br: Verificação de Duplicados de Upload Habilitada (true/false)
+            ru: Проверка дубликатов загрузки включена (true/false)
+            ko: 업로드 중복 확인 활성화 (true/false)
+            zh-Hant: 啟用上傳重複檢查 (true/false)
+            zh: 启用上传重复检查 (true/false)
+        - default: "skip"
+          edit: true
+          envKey: NUXT_UPLOAD_DUPLICATE_CHECK_MODE
+          labelEn: Upload Duplicate Check Mode
+          labelZh: 上传重复检查模式
+          required: false
+          type: text
+          label:
+            en: Upload Duplicate Check Mode (warn/block/skip)
+            ja: アップロード重複チェックモード (warn/block/skip)
+            ms: Mod Pemeriksaan Pendua Muat Naik (warn/block/skip)
+            pt-br: Modo de Verificação de Duplicados de Upload (warn/block/skip)
+            ru: Режим проверки дубликатов загрузки (warn/block/skip)
+            ko: 업로드 중복 확인 모드 (warn/block/skip)
+            zh-Hant: 上傳重複檢查模式 (warn/block/skip)
+            zh: 上传重复检查模式 (warn/block/skip)
