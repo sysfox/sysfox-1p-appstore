@@ -1,0 +1,23 @@
+services:
+  cadvisor:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    devices:
+      - /dev/kmsg
+    privileged: true
+    image: gcr.io/cadvisor/cadvisor:v0.50.0
+    labels:  
+      createdBy: "Apps"
+networks:  
+  1panel-network:  
+    external: true

@@ -6,6 +6,7 @@ This is a third-party 1Panel App Store repository.
 
 ## 已包含的应用 / Included Apps
 
+- **cAdvisor** - 容器资源监控工具 / Container resource usage and performance monitoring tool
 - **ChronoFrame** - 自托管照片展示和管理应用 / Self-hosted photo display and management application
 
 ## 使用方法 / Usage
