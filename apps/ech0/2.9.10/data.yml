@@ -1,0 +1,35 @@
+additionalProperties:
+    formFields:
+        - default: 6277
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: WebUI Port
+            ja: WebUI ポート
+            ms: Port WebUI
+            pt-br: Porta WebUI
+            ru: Порт WebUI
+            ko: WebUI 포트
+            zh-Hant: WebUI 埠
+            zh: WebUI 端口
+        - default: "Hello Echos"
+          edit: true
+          envKey: JWT_SECRET
+          labelEn: JWT Secret
+          labelZh: JWT 密钥
+          required: true
+          type: text
+          label:
+            en: JWT Secret
+            ja: JWT シークレット
+            ms: Rahsia JWT
+            pt-br: Segredo JWT
+            ru: JWT секрет
+            ko: JWT 시크릿
+            zh-Hant: JWT 密鑰
+            zh: JWT 密钥
