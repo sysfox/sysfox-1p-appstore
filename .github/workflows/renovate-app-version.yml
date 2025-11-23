@@ -125,10 +125,18 @@ jobs:
             exit 0
           fi
 
-          echo "Found PR #$pr_number, force merging..."
+          echo "Found PR #$pr_number"
 
-          # 强制合并，不管 mergeable 状态
-          gh pr merge "$pr_number" --merge --delete-branch --admin
+          # 检查是否有应用更新（检查是否有 apps 目录下的 docker-compose.yml 变更）
+          if [[ -n "${{ steps.rename.outputs.apps }}" ]]; then
+            echo "Detected app updates: ${{ steps.rename.outputs.apps }}"
+            echo "This is an app update PR, proceeding with auto-merge..."
+            # 强制合并，不管 mergeable 状态
+            gh pr merge "$pr_number" --merge --delete-branch --admin
+          else
+            echo "This PR does not contain app updates, skipping auto-merge"
+            exit 0
+          fi
 
 
                 
