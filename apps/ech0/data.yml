@@ -1,0 +1,33 @@
+name: Ech0
+tags:
+    - 实用工具
+    - 多媒体
+title: 轻量级联邦发布平台
+description: 面向个人的新一代开源、自托管、专注思想流动的轻量级联邦发布平台
+additionalProperties:
+    key: ech0
+    name: Ech0
+    tags:
+        - Tool
+        - Media
+    shortDescZh: 轻量级联邦发布平台
+    shortDescEn: Lightweight federated publishing platform
+    description:
+        en: Ech0 is a next-generation open-source self-hosted platform designed for individual users. It is ultra-lightweight and low-cost, supporting the ActivityPub protocol to let you easily publish and share ideas, writings, and links. With a clean, intuitive interface and powerful command-line tools, content management becomes simple and flexible.
+        ja: Ech0は、個人ユーザー向けに設計された次世代のオープンソースセルフホスティングプラットフォームです。超軽量で低コスト、ActivityPubプロトコルをサポートし、アイデア、文章、リンクを簡単に公開・共有できます。
+        ms: Ech0 ialah platform sumber terbuka generasi seterusnya yang direka untuk pengguna individu. Ia sangat ringan dan kos rendah, menyokong protokol ActivityPub untuk membolehkan anda menerbitkan dan berkongsi idea, tulisan, dan pautan dengan mudah.
+        pt-br: Ech0 é uma plataforma de código aberto de próxima geração projetada para usuários individuais. É ultra-leve e de baixo custo, suportando o protocolo ActivityPub para permitir que você publique e compartilhe ideias, textos e links facilmente.
+        ru: Ech0 - это платформа следующего поколения с открытым исходным кодом, разработанная для индивидуальных пользователей. Она ультралегкая и недорогая, поддерживает протокол ActivityPub, позволяя легко публиковать и делиться идеями, текстами и ссылками.
+        ko: Ech0는 개인 사용자를 위해 설계된 차세대 오픈 소스 셀프 호스팅 플랫폼입니다. 초경량 저비용으로 ActivityPub 프로토콜을 지원하여 아이디어, 글, 링크를 쉽게 게시하고 공유할 수 있습니다.
+        zh-Hant: Ech0是一款專為個人用戶設計的新一代開源自托管平台，超輕量低成本，支持ActivityPub協議，讓你輕鬆發布和分享想法、文字與鏈接。
+        zh: Ech0是一款专为个人用户设计的新一代开源自托管平台，超轻量低成本，支持ActivityPub协议，让你轻松发布和分享想法、文字与链接。
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://echo.soopy.cn/
+    github: https://github.com/lin-snow/Ech0
+    document: https://echo.soopy.cn/
+    architectures:
+      - amd64
+      - arm64
