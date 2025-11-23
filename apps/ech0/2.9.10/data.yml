@@ -25,11 +25,11 @@ additionalProperties:
           required: true
           type: text
           label:
-            en: JWT Secret (IMPORTANT: Change this default value for security)
-            ja: JWT シークレット (重要：セキュリティのためにこのデフォルト値を変更してください)
-            ms: Rahsia JWT (PENTING: Tukar nilai lalai ini untuk keselamatan)
-            pt-br: Segredo JWT (IMPORTANTE: Altere este valor padrão por segurança)
-            ru: JWT секрет (ВАЖНО: Измените это значение по умолчанию для безопасности)
-            ko: JWT 시크릿 (중요: 보안을 위해 기본값을 변경하세요)
-            zh-Hant: JWT 密鑰 (重要：請為安全性變更此預設值)
-            zh: JWT 密钥 (重要：请修改此默认值以提高安全性)
+            en: "JWT Secret (IMPORTANT: Change this default value for security)"
+            ja: "JWT シークレット (重要：セキュリティのためにこのデフォルト値を変更してください)"
+            ms: "Rahsia JWT (PENTING: Tukar nilai lalai ini untuk keselamatan)"
+            pt-br: "Segredo JWT (IMPORTANTE: Altere este valor padrão por segurança)"
+            ru: "JWT секрет (ВАЖНО: Измените это значение по умолчанию для безопасности)"
+            ko: "JWT 시크릿 (중요: 보안을 위해 기본값을 변경하세요)"
+            zh-Hant: "JWT 密鑰 (重要：請為安全性變更此預設值)"
+            zh: "JWT 密钥 (重要：请修改此默认值以提高安全性)"
