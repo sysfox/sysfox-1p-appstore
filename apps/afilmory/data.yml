@@ -1,0 +1,33 @@
+name: Afilmory
+tags:
+    - 多媒体
+    - 实用工具
+title: 现代化照片画廊网站
+description: 基于 React + TypeScript 构建的现代照片画廊网站，支持从多种存储源自动同步照片
+additionalProperties:
+    key: afilmory
+    name: Afilmory
+    tags:
+        - Media
+        - Tool
+    shortDescZh: 现代化照片画廊网站
+    shortDescEn: Modern photo gallery website
+    description:
+        en: A modern photo gallery website built with React + TypeScript, supporting automatic photo synchronization from multiple storage sources (S3, GitHub), featuring high-performance WebGL rendering, masonry layout, EXIF information display, thumbnail generation, and more.
+        ja: React + TypeScriptで構築されたモダンな写真ギャラリーウェブサイト。複数のストレージソース（S3、GitHub）からの自動写真同期をサポートし、高性能WebGLレンダリング、メイソンリーレイアウト、EXIF情報表示、サムネイル生成などの機能を備えています。
+        ms: Laman web galeri foto moden yang dibina dengan React + TypeScript, menyokong penyegerakan foto automatik dari pelbagai sumber storan (S3, GitHub), dengan rendering WebGL berprestasi tinggi, susun atur masonry, paparan maklumat EXIF, penjanaan thumbnail, dan banyak lagi.
+        pt-br: Um site de galeria de fotos moderno construído com React + TypeScript, suportando sincronização automática de fotos de múltiplas fontes de armazenamento (S3, GitHub), com renderização WebGL de alto desempenho, layout masonry, exibição de informações EXIF, geração de miniaturas e mais.
+        ru: Современный веб-сайт фотогалереи, созданный с помощью React + TypeScript, поддерживающий автоматическую синхронизацию фотографий из нескольких источников хранения (S3, GitHub), с высокопроизводительным рендерингом WebGL, макетом masonry, отображением информации EXIF, генерацией миниатюр и многим другим.
+        ko: React + TypeScript로 구축된 현대적인 사진 갤러리 웹사이트로, 여러 스토리지 소스(S3, GitHub)에서 자동 사진 동기화를 지원하며, 고성능 WebGL 렌더링, 매이슨리 레이아웃, EXIF 정보 표시, 썸네일 생성 등을 제공합니다.
+        zh-Hant: 基於 React + TypeScript 構建的現代化照片畫廊網站，支援從多種儲存來源（S3、GitHub）自動同步照片，具有高性能 WebGL 渲染、瀑布流佈局、EXIF 資訊顯示、縮圖生成等功能。
+        zh: 基于 React + TypeScript 构建的现代照片画廊网站，支持从多种存储源（S3、GitHub）自动同步照片，具有高性能 WebGL 渲染、瀑布流布局、EXIF 信息显示、缩略图生成等功能。
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://afilmory.art/
+    github: https://github.com/Afilmory/afilmory
+    document: https://docs.afilmory.art/
+    architectures:
+      - amd64
+      - arm64

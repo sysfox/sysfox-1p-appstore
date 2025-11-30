@@ -6,6 +6,7 @@ This is a third-party 1Panel App Store repository.
 
 ## 已包含的应用 / Included Apps
 
+- **Afilmory** - 现代化照片画廊网站 / Modern photo gallery website
 - **cAdvisor** - 容器资源监控工具 / Container resource usage and performance monitoring tool
 - **ChronoFrame** - 自托管照片展示和管理应用 / Self-hosted photo display and management application
 - **Ech0** - 轻量级联邦发布平台 / Lightweight federated publishing platform
