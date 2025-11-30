@@ -1,7 +1,7 @@
 services:
   db:
     container_name: ${CONTAINER_NAME}_db
-    image: postgres:16-alpine
+    image: postgres:18-alpine
     restart: always
     networks:
       - 1panel-network
