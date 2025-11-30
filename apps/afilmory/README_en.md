@@ -4,6 +4,15 @@ Afilmory (/əˈfɪlməri/, "uh-FIL-muh-ree") is a term created for personal phot
 
 A modern photo gallery website built with React + TypeScript, supporting automatic photo synchronization from multiple storage sources (S3, GitHub), featuring high-performance WebGL rendering, masonry layout, EXIF information display, thumbnail generation, and more.
 
+## Prerequisites
+
+**Important:** Before installing this application, you need to ensure the following dependent services are installed:
+
+- **PostgreSQL Database Service** - Please install PostgreSQL database from the App Store first
+- **Redis Cache Service** - Please install Redis cache service from the App Store first
+
+During installation, the system will automatically detect and bind the installed PostgreSQL and Redis services.
+
 ## Features
 
 ### 🖼️ Core Functionality
