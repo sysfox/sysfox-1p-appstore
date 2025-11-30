@@ -17,55 +17,103 @@ additionalProperties:
             ko: WebUI 포트
             zh-Hant: WebUI 埠
             zh: WebUI 端口
-        - default: "afilmory"
-          edit: true
-          envKey: POSTGRES_USER
-          labelEn: PostgreSQL User
-          labelZh: PostgreSQL 用户名
+        - default: ""
+          envKey: PANEL_DB_HOST
+          key: postgresql
+          labelEn: PostgreSQL Database Service
+          labelZh: PostgreSQL 数据库服务
           required: true
+          type: service
+          label:
+            en: PostgreSQL Database Service
+            ja: PostgreSQLデータベースサービス
+            ms: Perkhidmatan Pangkalan Data PostgreSQL
+            pt-br: Serviço de Banco de Dados PostgreSQL
+            ru: Сервис базы данных PostgreSQL
+            ko: PostgreSQL 데이터베이스 서비스
+            zh-Hant: PostgreSQL 資料庫服務
+            zh: PostgreSQL 数据库服务
+        - default: afilmory
+          envKey: PANEL_DB_NAME
+          labelEn: Database Name
+          labelZh: 数据库名
+          random: true
+          required: true
+          rule: paramCommon
           type: text
           label:
-            en: PostgreSQL Username
-            ja: PostgreSQL ユーザー名
-            ms: Nama Pengguna PostgreSQL
-            pt-br: Usuário PostgreSQL
-            ru: Пользователь PostgreSQL
-            ko: PostgreSQL 사용자명
-            zh-Hant: PostgreSQL 使用者名稱
-            zh: PostgreSQL 用户名
-        - default: ""
-          edit: true
-          envKey: POSTGRES_PASSWORD
-          labelEn: PostgreSQL Password
-          labelZh: PostgreSQL 密码
+            en: Database Name
+            ja: データベース名
+            ms: Nama Pangkalan Data
+            pt-br: Nome do Banco de Dados
+            ru: Имя базы данных
+            ko: 데이터베이스명
+            zh-Hant: 資料庫名稱
+            zh: 数据库名
+        - default: afilmory
+          envKey: PANEL_DB_USER
+          labelEn: Database User
+          labelZh: 数据库用户
+          random: true
+          required: true
+          rule: paramCommon
+          type: text
+          label:
+            en: Database User
+            ja: データベースユーザー
+            ms: Pengguna Pangkalan Data
+            pt-br: Usuário do Banco de Dados
+            ru: Пользователь базы данных
+            ko: 데이터베이스 사용자
+            zh-Hant: 資料庫使用者
+            zh: 数据库用户
+        - default: afilmory
+          envKey: PANEL_DB_USER_PASSWORD
+          labelEn: Database Password
+          labelZh: 数据库用户密码
+          random: true
           required: true
           type: password
-          random: true
           label:
-            en: PostgreSQL Password
-            ja: PostgreSQL パスワード
-            ms: Kata Laluan PostgreSQL
-            pt-br: Senha PostgreSQL
-            ru: Пароль PostgreSQL
-            ko: PostgreSQL 비밀번호
-            zh-Hant: PostgreSQL 密碼
-            zh: PostgreSQL 密码
-        - default: "afilmory"
-          edit: true
-          envKey: POSTGRES_DB
-          labelEn: PostgreSQL Database
-          labelZh: PostgreSQL 数据库名
+            en: Database Password
+            ja: データベースパスワード
+            ms: Kata Laluan Pangkalan Data
+            pt-br: Senha do Banco de Dados
+            ru: Пароль базы данных
+            ko: 데이터베이스 비밀번호
+            zh-Hant: 資料庫使用者密碼
+            zh: 数据库用户密码
+        - default: ""
+          envKey: PANEL_REDIS_HOST
+          key: redis
+          labelEn: Redis Service
+          labelZh: Redis 服务
           required: true
+          type: service
+          label:
+            en: Redis Service
+            ja: Redisサービス
+            ms: Perkhidmatan Redis
+            pt-br: Serviço Redis
+            ru: Сервис Redis
+            ko: Redis 서비스
+            zh-Hant: Redis 服務
+            zh: Redis 服务
+        - default: ""
+          disabled: true
+          envKey: PANEL_REDIS_ROOT_PASSWORD
+          labelEn: Redis Password
+          labelZh: Redis 密码
           type: text
           label:
-            en: PostgreSQL Database Name
-            ja: PostgreSQL データベース名
-            ms: Nama Pangkalan Data PostgreSQL
-            pt-br: Nome do Banco de Dados PostgreSQL
-            ru: Имя базы данных PostgreSQL
-            ko: PostgreSQL 데이터베이스명
-            zh-Hant: PostgreSQL 資料庫名稱
-            zh: PostgreSQL 数据库名
+            en: Redis Password
+            ja: Redisパスワード
+            ms: Kata Laluan Redis
+            pt-br: Senha Redis
+            ru: Пароль Redis
+            ko: Redis 비밀번호
+            zh-Hant: Redis 密碼
+            zh: Redis 密码
         - default: ""
           edit: true
           envKey: CONFIG_ENCRYPTION_KEY
