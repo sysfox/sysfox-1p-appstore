@@ -1,0 +1,36 @@
+additionalProperties:
+    formFields:
+        - default: 3000
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: WebUI Port
+            ja: WebUI ポート
+            ms: Port WebUI
+            pt-br: Porta WebUI
+            ru: Порт WebUI
+            ko: WebUI 포트
+            zh-Hant: WebUI 埠
+            zh: WebUI 端口
+        - default: ""
+          edit: true
+          envKey: PASSWORD
+          labelEn: Access Password
+          labelZh: 访问密码
+          required: true
+          type: password
+          random: true
+          label:
+            en: "Access Password (Required for security)"
+            ja: "アクセスパスワード（セキュリティのために必須）"
+            ms: "Kata Laluan Akses (Diperlukan untuk keselamatan)"
+            pt-br: "Senha de Acesso (Necessário para segurança)"
+            ru: "Пароль доступа (Требуется для безопасности)"
+            ko: "액세스 비밀번호 (보안을 위해 필수)"
+            zh-Hant: "訪問密碼（為安全性所需）"
+            zh: "访问密码（为安全性所需）"

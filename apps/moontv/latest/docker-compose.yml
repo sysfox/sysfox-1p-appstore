@@ -1,0 +1,17 @@
+services:
+  moontv:
+    container_name: ${CONTAINER_NAME}
+    image: ghcr.io/senshinya/moontv:latest
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    environment:
+      - PASSWORD=${PASSWORD}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
