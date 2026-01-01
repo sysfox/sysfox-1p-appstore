@@ -1,7 +1,7 @@
 services:
   moontv:
     container_name: ${CONTAINER_NAME}
-    image: ghcr.io/senshinya/moontv:latest
+    image: ghcr.io/samqin123/moontv:latest
     restart: unless-stopped
     networks:
       - 1panel-network
