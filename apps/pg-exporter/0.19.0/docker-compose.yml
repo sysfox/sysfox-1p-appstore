@@ -5,10 +5,10 @@ services:
     networks:
       - 1panel-network
     ports:
-      - "${PANEL_APP_PORT_HTTP}:9630"
+      - "${PANEL_APP_PORT_HTTP}:9187"
     environment:
-      - PG_EXPORTER_URL=${PG_EXPORTER_URL}
-    image: pgsty/pg_exporter:v1.2.0
+      - DATA_SOURCE_NAME=${DATA_SOURCE_NAME}
+    image: prometheuscommunity/postgres-exporter:v0.19.0
     labels:  
       createdBy: "Apps"
 networks:  

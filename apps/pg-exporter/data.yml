@@ -11,23 +11,23 @@ additionalProperties:
         - Tool
         - DevOps
     shortDescZh: PostgreSQL 监控指标导出器
-    shortDescEn: Advanced PostgreSQL & pgBouncer Metrics Exporter for Prometheus
+    shortDescEn: PostgreSQL metrics exporter for Prometheus
     description:
-        en: PG Exporter is an advanced PostgreSQL & pgBouncer metrics exporter for Prometheus. It provides 600+ metrics and ~3K time series per instance, covering everything you need for PostgreSQL observability with declarative config, dynamic planning, and customizable collectors.
-        ja: PG ExporterはPrometheus向けの高度なPostgreSQL & pgBouncerメトリクスエクスポーターです。宣言的な設定、動的プランニング、カスタマイズ可能なコレクターで600以上のメトリクスを提供します。
-        ms: PG Exporter ialah pengeksport metrik PostgreSQL & pgBouncer yang canggih untuk Prometheus, menyediakan lebih 600 metrik dengan konfigurasi deklaratif.
-        pt-br: PG Exporter é um exportador avançado de métricas PostgreSQL & pgBouncer para Prometheus, fornecendo 600+ métricas com configuração declarativa.
-        ru: PG Exporter — это расширенный экспортёр метрик PostgreSQL & pgBouncer для Prometheus, предоставляющий 600+ метрик с декларативной конфигурацией.
-        ko: PG Exporter는 Prometheus용 고급 PostgreSQL & pgBouncer 메트릭 내보내기 도구로, 선언적 설정으로 600개 이상의 메트릭을 제공합니다.
-        zh-Hant: PG Exporter 是適用於 Prometheus 的進階 PostgreSQL & pgBouncer 指標導出器，提供 600+ 個指標和聲明式設定。
-        zh: PG Exporter 是 Prometheus 的高级 PostgreSQL & pgBouncer 指标导出器，提供 600+ 个指标，支持声明式配置和动态规划。
+        en: postgres_exporter is a PostgreSQL metrics exporter for Prometheus. It collects metrics from a PostgreSQL server and exposes them in a format that Prometheus can scrape, supporting multiple PostgreSQL versions and providing comprehensive database observability.
+        ja: postgres_exporterはPrometheus向けのPostgreSQLメトリクスエクスポーターです。PostgreSQLサーバーからメトリクスを収集し、Prometheusがスクレイピングできる形式で公開します。複数のPostgreSQLバージョンをサポートし、包括的なデータベース可観測性を提供します。
+        ms: postgres_exporter ialah pengeksport metrik PostgreSQL untuk Prometheus. Ia mengumpul metrik dari pelayan PostgreSQL dan mendedahkannya dalam format yang boleh diskrap oleh Prometheus, menyokong pelbagai versi PostgreSQL.
+        pt-br: postgres_exporter é um exportador de métricas PostgreSQL para Prometheus. Ele coleta métricas do servidor PostgreSQL e as expõe em um formato que o Prometheus pode coletar, suportando múltiplas versões do PostgreSQL.
+        ru: postgres_exporter — это экспортёр метрик PostgreSQL для Prometheus. Он собирает метрики с сервера PostgreSQL и предоставляет их в формате, который может собирать Prometheus, поддерживая несколько версий PostgreSQL.
+        ko: postgres_exporter는 Prometheus를 위한 PostgreSQL 메트릭 내보내기 도구입니다. PostgreSQL 서버에서 메트릭을 수집하여 Prometheus가 스크레이핑할 수 있는 형식으로 노출하며, 여러 PostgreSQL 버전을 지원합니다.
+        zh-Hant: postgres_exporter 是適用於 Prometheus 的 PostgreSQL 指標導出器。它從 PostgreSQL 伺服器收集指標，並以 Prometheus 可抓取的格式公開，支援多個 PostgreSQL 版本。
+        zh: postgres_exporter 是 Prometheus 的 PostgreSQL 指标导出器。它从 PostgreSQL 服务器收集指标并以 Prometheus 可抓取的格式公开，支持多个 PostgreSQL 版本。
     type: tool
     crossVersionUpdate: true
     limit: 0
     recommend: 0
-    website: https://pigsty.io/docs/pg_exporter
-    github: https://github.com/pgsty/pg_exporter
-    document: https://pigsty.io/docs/pg_exporter
+    website: https://github.com/prometheus-community/postgres_exporter
+    github: https://github.com/prometheus-community/postgres_exporter
+    document: https://github.com/prometheus-community/postgres_exporter
     architectures:
       - amd64
       - arm64
