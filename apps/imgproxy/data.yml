@@ -1,0 +1,31 @@
+name: imgproxy
+tags:
+    - 实用工具
+title: 高性能图片处理服务器
+description: 高性能图片处理服务器
+additionalProperties:
+    key: imgproxy
+    name: imgproxy
+    tags:
+        - Tool
+    shortDescZh: 高性能图片处理服务器
+    shortDescEn: Fast and secure standalone server for resizing and converting remote images
+    description:
+        en: imgproxy is a fast and secure standalone server for resizing and converting remote images. The main principles of imgproxy are simplicity, speed, and security. It is a Go application, ready to be installed and used in any Unix environment—and also ready to be containerized using Docker.
+        ja: imgproxyは、リモート画像のサイズ変更と変換のための高速で安全なスタンドアロンサーバーです。シンプルさ、速度、セキュリティが主要な原則です。
+        ms: imgproxy ialah pelayan kendiri yang pantas dan selamat untuk mengubah saiz dan menukar imej jauh.
+        pt-br: imgproxy é um servidor standalone rápido e seguro para redimensionar e converter imagens remotas.
+        ru: imgproxy — это быстрый и безопасный автономный сервер для изменения размера и преобразования удалённых изображений.
+        ko: imgproxy는 원격 이미지를 크기 조정하고 변환하기 위한 빠르고 안전한 독립형 서버입니다.
+        zh-Hant: imgproxy 是一個快速且安全的獨立伺服器，用於調整和轉換遠端圖片大小。
+        zh: imgproxy 是一个快速且安全的独立服务器，用于调整和转换远程图片大小。
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://imgproxy.net
+    github: https://github.com/imgproxy/imgproxy
+    document: https://docs.imgproxy.net
+    architectures:
+      - amd64
+      - arm64
