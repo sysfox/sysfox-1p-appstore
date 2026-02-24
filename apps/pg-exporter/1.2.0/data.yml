@@ -1,0 +1,35 @@
+additionalProperties:
+    formFields:
+        - default: 9630
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Metrics Port
+          labelZh: 指标端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: Metrics Port
+            ja: メトリクスポート
+            ms: Port Metrik
+            pt-br: Porta de Métricas
+            ru: Порт метрик
+            ko: 메트릭 포트
+            zh-Hant: 指標端口
+            zh: 指标端口
+        - default: "postgres://postgres:password@localhost:5432/postgres?sslmode=disable"
+          edit: true
+          envKey: PG_EXPORTER_URL
+          labelEn: PostgreSQL Connection URL
+          labelZh: PostgreSQL 连接地址
+          required: true
+          type: text
+          label:
+            en: PostgreSQL Connection URL
+            ja: PostgreSQL 接続URL
+            ms: URL Sambungan PostgreSQL
+            pt-br: URL de Conexão PostgreSQL
+            ru: URL подключения к PostgreSQL
+            ko: PostgreSQL 연결 URL
+            zh-Hant: PostgreSQL 連線 URL
+            zh: PostgreSQL 连接地址

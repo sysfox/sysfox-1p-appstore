@@ -6,11 +6,11 @@ This is a third-party 1Panel App Store repository.
 
 ## 已包含的应用 / Included Apps
 
-- **Afilmory** - 现代化照片画廊网站 / Modern photo gallery website
 - **cAdvisor** - 容器资源监控工具 / Container resource usage and performance monitoring tool
 - **ChronoFrame** - 自托管照片展示和管理应用 / Self-hosted photo display and management application
 - **Ech0** - 轻量级联邦发布平台 / Lightweight federated publishing platform
-- **MoonTV** - 影视聚合播放器 / Video aggregation player
+- **imgproxy** - 高性能图片处理服务器 / Fast and secure standalone server for resizing and converting remote images
+- **PG Exporter** - PostgreSQL 监控指标导出器 / Advanced PostgreSQL & pgBouncer Metrics Exporter for Prometheus
 
 ## 使用方法 / Usage
 

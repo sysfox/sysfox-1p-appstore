@@ -1,0 +1,16 @@
+services:
+  pg-exporter:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9630"
+    environment:
+      - PG_EXPORTER_URL=${PG_EXPORTER_URL}
+    image: pgsty/pg_exporter:v1.2.0
+    labels:  
+      createdBy: "Apps"
+networks:  
+  1panel-network:  
+    external: true
