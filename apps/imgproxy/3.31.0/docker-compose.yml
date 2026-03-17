@@ -9,7 +9,7 @@ services:
     environment:
       - IMGPROXY_KEY=${IMGPROXY_KEY}
       - IMGPROXY_SALT=${IMGPROXY_SALT}
-    image: darthsim/imgproxy:v3.31.0
+    image: darthsim/imgproxy:v3.31.1
     labels:  
       createdBy: "Apps"
 networks:  
