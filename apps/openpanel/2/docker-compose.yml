@@ -1,0 +1,160 @@
+services:
+  openpanel-db:
+    image: postgres:14-alpine
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=openpanel
+      - POSTGRES_PASSWORD=${OPENPANEL_DB_PASSWORD}
+      - POSTGRES_DB=openpanel
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U openpanel"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    labels:
+      createdBy: "Apps"
+
+  openpanel-kv:
+    image: redis:7.2.5-alpine
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - ./data/redis:/data
+    command: ["redis-server", "--maxmemory-policy", "noeviction"]
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    labels:
+      createdBy: "Apps"
+
+  openpanel-ch:
+    image: clickhouse/clickhouse-server:25.10.2.65
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - ./data/clickhouse:/var/lib/clickhouse
+    environment:
+      - CLICKHOUSE_DB=openpanel
+      - CLICKHOUSE_SKIP_USER_SETUP=1
+    healthcheck:
+      test: ["CMD-SHELL", "clickhouse-client --query 'SELECT 1'"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    labels:
+      createdBy: "Apps"
+
+  openpanel-api:
+    image: lindesvard/openpanel-api:2
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP_2}:3000"
+    command: >
+      sh -c "
+        echo 'Running migrations...'
+        CI=true pnpm -r run migrate:deploy
+        pnpm start
+      "
+    environment:
+      - NODE_ENV=production
+      - SELF_HOSTED=true
+      - BATCH_SIZE=5000
+      - BATCH_INTERVAL=10000
+      - ALLOW_REGISTRATION=${OPENPANEL_ALLOW_REGISTRATION}
+      - ALLOW_INVITATION=true
+      - REDIS_URL=redis://openpanel-kv:6379
+      - CLICKHOUSE_URL=http://openpanel-ch:8123/openpanel
+      - DATABASE_URL=postgresql://openpanel:${OPENPANEL_DB_PASSWORD}@openpanel-db:5432/openpanel?schema=public
+      - DATABASE_URL_DIRECT=postgresql://openpanel:${OPENPANEL_DB_PASSWORD}@openpanel-db:5432/openpanel?schema=public
+      - DASHBOARD_URL=${OPENPANEL_DASHBOARD_URL}
+      - API_URL=${OPENPANEL_API_URL}
+      - COOKIE_SECRET=${OPENPANEL_COOKIE_SECRET}
+    depends_on:
+      openpanel-db:
+        condition: service_healthy
+      openpanel-ch:
+        condition: service_healthy
+      openpanel-kv:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/healthcheck || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    labels:
+      createdBy: "Apps"
+
+  openpanel-dashboard:
+    container_name: ${CONTAINER_NAME}
+    image: lindesvard/openpanel-dashboard:2
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    environment:
+      - NODE_ENV=production
+      - SELF_HOSTED=true
+      - REDIS_URL=redis://openpanel-kv:6379
+      - CLICKHOUSE_URL=http://openpanel-ch:8123/openpanel
+      - DATABASE_URL=postgresql://openpanel:${OPENPANEL_DB_PASSWORD}@openpanel-db:5432/openpanel?schema=public
+      - DATABASE_URL_DIRECT=postgresql://openpanel:${OPENPANEL_DB_PASSWORD}@openpanel-db:5432/openpanel?schema=public
+      - DASHBOARD_URL=${OPENPANEL_DASHBOARD_URL}
+      - API_URL=${OPENPANEL_API_URL}
+      - COOKIE_SECRET=${OPENPANEL_COOKIE_SECRET}
+      - ALLOW_REGISTRATION=${OPENPANEL_ALLOW_REGISTRATION}
+      - ALLOW_INVITATION=true
+    depends_on:
+      openpanel-api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/api/healthcheck || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    labels:
+      createdBy: "Apps"
+
+  openpanel-worker:
+    image: lindesvard/openpanel-worker:2
+    restart: always
+    networks:
+      - 1panel-network
+    environment:
+      - NODE_ENV=production
+      - SELF_HOSTED=true
+      - REDIS_URL=redis://openpanel-kv:6379
+      - CLICKHOUSE_URL=http://openpanel-ch:8123/openpanel
+      - DATABASE_URL=postgresql://openpanel:${OPENPANEL_DB_PASSWORD}@openpanel-db:5432/openpanel?schema=public
+      - DATABASE_URL_DIRECT=postgresql://openpanel:${OPENPANEL_DB_PASSWORD}@openpanel-db:5432/openpanel?schema=public
+      - DASHBOARD_URL=${OPENPANEL_DASHBOARD_URL}
+      - API_URL=${OPENPANEL_API_URL}
+      - COOKIE_SECRET=${OPENPANEL_COOKIE_SECRET}
+    depends_on:
+      openpanel-api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/healthcheck || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
