@@ -1,0 +1,116 @@
+additionalProperties:
+    formFields:
+        - default: 3100
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Dashboard Port
+          labelZh: 仪表盘端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: Dashboard Port
+            ja: ダッシュボードポート
+            ms: Port Papan Pemuka
+            pt-br: Porta do Painel
+            ru: Порт дашборда
+            ko: 대시보드 포트
+            zh-Hant: 儀表板端口
+            zh: 仪表盘端口
+        - default: 3110
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP_2
+          labelEn: API Port
+          labelZh: API 端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: API Port
+            ja: API ポート
+            ms: Port API
+            pt-br: Porta da API
+            ru: Порт API
+            ko: API 포트
+            zh-Hant: API 端口
+            zh: API 端口
+        - default: "http://your-server-ip:3100"
+          edit: true
+          envKey: OPENPANEL_DASHBOARD_URL
+          labelEn: Dashboard Public URL
+          labelZh: 仪表盘公共 URL
+          required: true
+          type: text
+          label:
+            en: "Dashboard Public URL (e.g. http://your-server-ip:3100)"
+            ja: "ダッシュボード公開URL (例: http://your-server-ip:3100)"
+            ms: "URL Awam Papan Pemuka (cth. http://your-server-ip:3100)"
+            pt-br: "URL Público do Painel (ex: http://your-server-ip:3100)"
+            ru: "Публичный URL дашборда (например: http://your-server-ip:3100)"
+            ko: "대시보드 공개 URL (예: http://your-server-ip:3100)"
+            zh-Hant: "儀表板公共 URL（如 http://your-server-ip:3100）"
+            zh: "仪表盘公共 URL（如 http://your-server-ip:3100）"
+        - default: "http://your-server-ip:3110"
+          edit: true
+          envKey: OPENPANEL_API_URL
+          labelEn: API Public URL
+          labelZh: API 公共 URL
+          required: true
+          type: text
+          label:
+            en: "API Public URL (e.g. http://your-server-ip:3110)"
+            ja: "API 公開URL (例: http://your-server-ip:3110)"
+            ms: "URL Awam API (cth. http://your-server-ip:3110)"
+            pt-br: "URL Público da API (ex: http://your-server-ip:3110)"
+            ru: "Публичный URL API (например: http://your-server-ip:3110)"
+            ko: "API 공개 URL (예: http://your-server-ip:3110)"
+            zh-Hant: "API 公共 URL（如 http://your-server-ip:3110）"
+            zh: "API 公共 URL（如 http://your-server-ip:3110）"
+        - default: "changeme-use-strong-random-secret"
+          edit: true
+          envKey: OPENPANEL_COOKIE_SECRET
+          labelEn: Cookie Secret
+          labelZh: Cookie 密钥
+          required: true
+          type: text
+          label:
+            en: "Cookie Secret (IMPORTANT: Change this to a secure random string)"
+            ja: "Cookie シークレット (重要：安全なランダム文字列に変更してください)"
+            ms: "Rahsia Cookie (PENTING: Tukar kepada rentetan rawak yang selamat)"
+            pt-br: "Segredo do Cookie (IMPORTANTE: Mude para uma string aleatória segura)"
+            ru: "Cookie секрет (ВАЖНО: Замените на случайную безопасную строку)"
+            ko: "쿠키 시크릿 (중요: 안전한 임의 문자열로 변경하세요)"
+            zh-Hant: "Cookie 密鑰（重要：請更改為安全的隨機字串）"
+            zh: "Cookie 密钥（重要：请修改为安全的随机字符串）"
+        - default: "changeme-strong-db-password"
+          edit: true
+          envKey: OPENPANEL_DB_PASSWORD
+          labelEn: Database Password
+          labelZh: 数据库密码
+          required: true
+          type: text
+          label:
+            en: "Database Password (IMPORTANT: Change this to a strong password)"
+            ja: "データベースパスワード (重要：強力なパスワードに変更してください)"
+            ms: "Kata Laluan Pangkalan Data (PENTING: Tukar kepada kata laluan yang kuat)"
+            pt-br: "Senha do Banco de Dados (IMPORTANTE: Mude para uma senha forte)"
+            ru: "Пароль базы данных (ВАЖНО: Замените на надёжный пароль)"
+            ko: "데이터베이스 비밀번호 (중요: 강력한 비밀번호로 변경하세요)"
+            zh-Hant: "資料庫密碼（重要：請更改為強密碼）"
+            zh: "数据库密码（重要：请修改为强密码）"
+        - default: "true"
+          edit: true
+          envKey: OPENPANEL_ALLOW_REGISTRATION
+          labelEn: Allow Registration
+          labelZh: 允许注册
+          required: true
+          type: text
+          label:
+            en: "Allow Registration (true/false, set to false after first admin is created)"
+            ja: "登録許可 (true/false、管理者作成後はfalseに変更推奨)"
+            ms: "Benarkan Pendaftaran (true/false, tetapkan ke false selepas pentadbir pertama dibuat)"
+            pt-br: "Permitir Registro (true/false, defina como false após criar o primeiro admin)"
+            ru: "Разрешить регистрацию (true/false, установите false после создания первого admin)"
+            ko: "회원가입 허용 (true/false, 첫 번째 관리자 생성 후 false로 변경 권장)"
+            zh-Hant: "允許注冊（true/false，建立第一個管理員後建議設為 false）"
+            zh: "允许注册（true/false，创建第一个管理员后建议设为 false）"
