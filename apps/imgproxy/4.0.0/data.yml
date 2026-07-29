@@ -1,0 +1,51 @@
+additionalProperties:
+    formFields:
+        - default: 8080
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: 网页端口
+          required: true
+          rule: paramPort
+          type: number
+          label:
+            en: WebUI Port
+            ja: WebUI ポート
+            ms: Port WebUI
+            pt-br: Porta WebUI
+            ru: Порт WebUI
+            ko: WebUI 포트
+            zh-Hant: WebUI 埠
+            zh: WebUI 端口
+        - default: ""
+          edit: true
+          envKey: IMGPROXY_KEY
+          labelEn: Security Key (hex-encoded)
+          labelZh: 安全密钥（十六进制）
+          required: false
+          type: text
+          label:
+            en: Security Key (hex-encoded, leave empty to disable signature)
+            ja: セキュリティキー（16進数エンコード、署名を無効にするには空白）
+            ms: Kunci Keselamatan (hex-encoded, kosong untuk nyahaktifkan tandatangan)
+            pt-br: Chave de Segurança (hex-encoded, deixe vazio para desabilitar assinatura)
+            ru: Ключ безопасности (hex-encoded, оставьте пустым для отключения подписи)
+            ko: 보안 키 (hex-encoded, 서명 비활성화하려면 비워두세요)
+            zh-Hant: 安全金鑰（十六進位，留空則停用簽名）
+            zh: 安全密钥（十六进制，留空则禁用签名验证）
+        - default: ""
+          edit: true
+          envKey: IMGPROXY_SALT
+          labelEn: Security Salt (hex-encoded)
+          labelZh: 安全盐值（十六进制）
+          required: false
+          type: text
+          label:
+            en: Security Salt (hex-encoded, leave empty to disable signature)
+            ja: セキュリティソルト（16進数エンコード、署名を無効にするには空白）
+            ms: Garam Keselamatan (hex-encoded, kosong untuk nyahaktifkan tandatangan)
+            pt-br: Salt de Segurança (hex-encoded, deixe vazio para desabilitar assinatura)
+            ru: Соль безопасности (hex-encoded, оставьте пустым для отключения подписи)
+            ko: 보안 솔트 (hex-encoded, 서명 비활성화하려면 비워두세요)
+            zh-Hant: 安全鹽值（十六進位，留空則停用簽名）
+            zh: 安全盐值（十六进制，留空则禁用签名验证）
