@@ -1,0 +1,33 @@
+name: OpenPanel
+tags:
+    - BI
+    - 实用工具
+title: 开源 Web 与产品分析平台
+description: 结合 Mixpanel 的强大功能与 Plausible 易用性的开源分析平台
+additionalProperties:
+    key: openpanel
+    name: OpenPanel
+    tags:
+        - BI
+        - Tool
+    shortDescZh: 开源 Web 与产品分析平台
+    shortDescEn: Open-source web and product analytics platform
+    description:
+        en: OpenPanel is an open-source web and product analytics platform that combines the power of Mixpanel with the ease of Plausible. It features real-time dashboards, funnels, cohorts, user profiles, session history, session replay, A/B testing, and GDPR-compliant cookieless tracking. Self-hosted with full control over your data.
+        ja: OpenPanelは、Mixpanelの強力さとPlausibleの使いやすさを組み合わせたオープンソースのWebおよびプロダクト分析プラットフォームです。リアルタイムダッシュボード、ファネル、コホート、ユーザープロファイル、セッション履歴、セッションリプレイ、A/Bテスト、GDPRに準拠したCookieなしトラッキングを備えています。
+        ms: OpenPanel ialah platform analitik web dan produk sumber terbuka yang menggabungkan kekuatan Mixpanel dengan kemudahan Plausible. Ia menampilkan papan pemuka masa nyata, corong, kohort, profil pengguna, sejarah sesi, ulangan sesi, ujian A/B, dan penjejakan tanpa kuki yang mematuhi GDPR.
+        pt-br: OpenPanel é uma plataforma de análise web e de produto de código aberto que combina o poder do Mixpanel com a facilidade do Plausible. Possui painéis em tempo real, funis, coortes, perfis de usuário, histórico de sessão, repetição de sessão, testes A/B e rastreamento sem cookies compatível com GDPR.
+        ru: OpenPanel — это платформа аналитики веб-сайтов и продуктов с открытым исходным кодом, сочетающая мощь Mixpanel с простотой Plausible. Включает дашборды реального времени, воронки, когорты, профили пользователей, историю сессий, воспроизведение сессий, A/B-тестирование и отслеживание без файлов cookie, соответствующее требованиям GDPR.
+        ko: OpenPanel은 Mixpanel의 강력함과 Plausible의 편의성을 결합한 오픈소스 웹 및 제품 분석 플랫폼입니다. 실시간 대시보드, 퍼널, 코호트, 사용자 프로필, 세션 기록, 세션 재생, A/B 테스트, GDPR 준수 쿠키 없는 추적 기능을 제공합니다.
+        zh-Hant: OpenPanel 是一個結合 Mixpanel 強大功能與 Plausible 易用性的開源 Web 和產品分析平台。提供實時儀表板、漏斗、群組、用戶配置文件、會話歷史記錄、會話回放、A/B 測試和符合 GDPR 的無 Cookie 追蹤。
+        zh: OpenPanel 是一个开源的 Web 与产品分析平台，融合了 Mixpanel 的强大功能和 Plausible 的易用性。提供实时仪表盘、漏斗分析、群组分析、用户画像、会话历史、会话回放、A/B 测试以及符合 GDPR 的无 Cookie 追踪。
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://openpanel.dev
+    github: https://github.com/Openpanel-dev/openpanel
+    document: https://openpanel.dev/docs
+    architectures:
+      - amd64
+      - arm64
