@@ -10,7 +10,7 @@ services:
       - ./data:/app/data
     environment:
       - DATABASE_URL=${DATABASE_URL}
-    image: ghcr.io/hoshinosuzumi/chronoframe:v0.14.1
+    image: ghcr.io/hoshinosuzumi/chronoframe:1.0.0
     labels:  
       createdBy: "Apps"
 networks:  
